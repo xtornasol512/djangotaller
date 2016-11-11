@@ -15,4 +15,8 @@ def formulario(request):
             return render(request, "formulario.html", {"formulario": "Gracias ya esta guardado tus datos"})
 
     return render(request, "formulario.html", {"formulario": form})
+
+def alumnos(request):
+    alumnos = InfoGeneral.objects.all()
+    return render(request, "alumnos.html", {"alumnos": alumnos})
 # Create your views here.
