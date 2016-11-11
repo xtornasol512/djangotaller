@@ -15,3 +15,6 @@ class InfoGeneral(models.Model):
     sexo = models.CharField(max_length=2, choices=SEXO_OPTIONS)
     direccion = models.CharField(max_length=100)
     estatura = models.CharField(max_length=50, default="")
+    email = models.EmailField(default="")
+    edad = models.IntegerField(default=18)
+
