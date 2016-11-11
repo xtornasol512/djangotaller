@@ -5,4 +5,4 @@ from .models import InfoGeneral
 class InfoGeneralForm(ModelForm):
     class Meta:
         model = InfoGeneral
-        fields = ["nombre", "email", "semestre", "edad"]
+        fields = ["nombre", "email", "semestre", "edad", "carrera", "telefono"]
