@@ -3,5 +3,9 @@ from django.http import HttpResponse
 
 
 def hola(request):
-    return HttpResponse("Hello World desde Django")
+    return render(request, "index.html", {"nombre": "Chucho A Garzón"})
+
+def formulario(request):
+    form = "Hola este es mi formulario"
+    return render(request, "formulario.html", {"formulario": form})
 # Create your views here.
